@@ -6,25 +6,22 @@ const Debounce = () => {
   const [results, setResults] = useState([]);
 
   useEffect(()=>{
-    const timer = setTimeout(() =>{
+    const timer = setTimeout(() => {
       setdebouncedQuery(query)
-    },500)
-    return ()=>{
-      clearTimeout(timer)
-    }
+    }, 500);
+    return () => clearTimeout(timer)
   },[query])
 
   useEffect(() => {
-    if (!debouncedQuery.trim()) {
+    if (!debouncedQuery.trim()){
       setResults([]);
       return;
     }
 
-    const fetchResults = async () => {
+    const fetchResults = async () =>{
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/users?name_like=${debouncedQuery}`,
       );
-
       const data = await response.json();
       setResults(data);
     };
