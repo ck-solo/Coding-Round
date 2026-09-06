@@ -23,3 +23,16 @@ function twoSumNumbers(nums, target) {
     return [];
 }
 console.log(twoSumNumbers([3, 8, 12, 4], 12));
+
+// duplicate
+function containsDuplicate(nums) {
+    let set = new Set();
+    for (let num of nums) {
+        if (set.has(num)) {
+            return true;
+        }
+        set.add(num);
+    }
+    return false;
+}
+console.log(containsDuplicate([1, 2, 3, 1]));
