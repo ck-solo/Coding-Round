@@ -8,3 +8,18 @@ var twoSum = function(nums, target) {
     }
     return [];
 };
+
+
+// return the number
+function twoSumNumbers(nums, target) {
+    let set = new Set();
+    for (let num of nums) {
+        let complement = target - num;
+        if (set.has(complement)) {
+            return [complement, num];
+        }
+        set.add(num);
+    }
+    return [];
+}
+console.log(twoSumNumbers([3, 8, 12, 4], 12));
