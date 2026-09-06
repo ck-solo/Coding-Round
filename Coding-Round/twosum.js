@@ -36,3 +36,19 @@ function containsDuplicate(nums) {
     return false;
 }
 console.log(containsDuplicate([1, 2, 3, 1]));
+
+
+//valid pair
+function countPairs(nums, target) {
+    let map = new Map();
+    let count = 0;
+    for (let num of nums) {
+        let complement = target - num;
+        if (map.has(complement)) {
+            count += map.get(complement);
+        }
+        map.set(num, (map.get(num) || 0) + 1);
+    }
+    return count;
+}
+console.log(countPairs([1, 5, 7, -1, 5], 6));
