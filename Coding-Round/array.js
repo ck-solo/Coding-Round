@@ -43,9 +43,19 @@
 
 
 // reverse array 
-const nums = [10, 20, 30, 40, 50];
-let reversed = [];
-for (let i = nums.length - 1; i >= 0; i--) {
-    reversed.push(nums[i]);
+// const nums = [10, 20, 30, 40, 50];
+// let reversed = [];
+// for (let i = nums.length - 1; i >= 0; i--) {
+//     reversed.push(nums[i]);
+// }
+// console.log(reversed);
+
+
+
+// sum of all elements
+const nums = [10, 20, 30, 40];
+let sum = 0;
+for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
 }
-console.log(reversed);
+console.log("Sum:", sum);
