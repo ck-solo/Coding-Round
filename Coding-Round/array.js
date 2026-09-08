@@ -28,15 +28,24 @@
 
 
 // find the second largest 
-const nums = [10, 5, 20, 8, 20, 15];
-let largest = -Infinity;
-let secondLargest = -Infinity;
-for (let i = 0; i < nums.length; i++) {
-    if (nums[i] > largest) {
-        secondLargest = largest;
-        largest = nums[i];
-    } else if (nums[i] > secondLargest && nums[i] !== largest) {
-        secondLargest = nums[i];
-    }
+// const nums = [10, 5, 20, 8, 20, 15];
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] > largest) {
+//         secondLargest = largest;
+//         largest = nums[i];
+//     } else if (nums[i] > secondLargest && nums[i] !== largest) {
+//         secondLargest = nums[i];
+//     }
+// }
+// console.log("Second largest:", secondLargest);
+
+
+// reverse array 
+const nums = [10, 20, 30, 40, 50];
+let reversed = [];
+for (let i = nums.length - 1; i >= 0; i--) {
+    reversed.push(nums[i]);
 }
-console.log("Second largest:", secondLargest);
+console.log(reversed);
