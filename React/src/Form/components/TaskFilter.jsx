@@ -7,9 +7,9 @@ function TaskFilter({ filterStatus, setFilterStatus, setPage }) {
   return (
     <div>
       <select className="tm-select" value={filterStatus} onChange={handleFilter}>
-        <option value="all">All Tasks</option>
-        <option value="completed">Completed</option>
-        <option value="pending">Pending</option>
+      <option value="all">All Tasks</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
       </select>
     </div>
   );
