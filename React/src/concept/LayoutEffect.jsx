@@ -1,11 +1,10 @@
 import React, { useEffect, useLayoutEffect, useRef } from 'react'
 
 const LayoutEffect = () => {
-
-    const boxRef = useRef();
-
+  const boxRef = useRef();
   useEffect(() => {
     boxRef.current.style.transform = "translateX(300px)";
+    boxRef.current.style.transform = "translateY(600px)";
   }, []);
 
   return (

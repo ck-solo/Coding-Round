@@ -5,6 +5,13 @@ const Debounce = () => {
   const [debouncedQuery, setdebouncedQuery] = useState("");
   const [results, setResults] = useState([]);
 
+  // useEffect(()=>{
+  //   const timer = setTimeout(() => {
+  //     setdebouncedQuery(query)
+  //   }, 500);
+  //   return () => clearTimeout(timer)
+  // },[query])
+  
   useEffect(()=>{
     const timer = setTimeout(() => {
       setdebouncedQuery(query)

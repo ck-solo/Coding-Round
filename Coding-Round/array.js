@@ -53,9 +53,9 @@
 
 
 // sum of all elements
-const nums = [10, 20, 30, 40];
-let sum = 0;
-for (let i = 0; i < nums.length; i++) {
-    sum += nums[i];
-}
-console.log("Sum:", sum);
+// const nums = [10, 20, 30, 40];
+// let sum = 0;
+// for (let i = 0; i < nums.length; i++) {
+//     sum += nums[i];
+// }
+// console.log("Sum:", sum);
