@@ -24,12 +24,10 @@ function TaskForm({ onAddTask, onUpdateTask, editingTask, setEditingTask }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-
     if (!formData.title.trim()) {
       alert("Title is required");
       return;
     }
-
     if (editingTask) {
       onUpdateTask(formData);
     } else {
